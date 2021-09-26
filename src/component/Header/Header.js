@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container-fluid">
+                <div className="container-fluid ms-4">
                     <a className="navbar-brand text-danger fw-bolder" href="./navbar">Admission Center</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -29,8 +29,8 @@ const Header = () => {
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-danger" type="submit">Search</button>
                         </form> */}
-                        <p class="d-flex flex-end me-5" style={{ fontSize: "20px" }}>
-                            <span class="text-success fw-bolder me-2">Total Budget :</span>10000 TK
+                        <p className="d-flex flex-end me-5" style={{ fontSize: "20px" }}>
+                            <span className="text-success fw-bolder me-2">Total Budget :</span>10000 TK
                         </p>
                     </div>
                 </div>
