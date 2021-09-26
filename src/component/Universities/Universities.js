@@ -5,6 +5,7 @@ import University from '../University/University';
 const Universities = () => {
     const [universities, setUniversities] = useState([]);
     const [cart, setCart] = useState([]);
+    const [price, setPrice] = useState(0);
 
     useEffect(() => {
         fetch('./university.json')
@@ -12,11 +13,14 @@ const Universities = () => {
             .then(data => setUniversities(data))
 
     }, [])
+
     const handleBtn = (university) => {
+
         const newUniversity = [...cart, university];
-        //console.log(newUniversity);
         setCart(newUniversity);
-        //console.log(cart);
+        let newPrice = price + university.formFillupFee;
+        setPrice(newPrice);
+
     };
 
     return (
@@ -30,11 +34,11 @@ const Universities = () => {
                     </div>
                 </div>
                 <div className="col-md-3">
-                    <h5 className="text-center">
+                    <h5 className="text-center text-primary">
                         Selected Items: {cart.length}
                     </h5>
-                    <h5 className="text-center">
-                        Total Cost:
+                    <h5 className="text-center text-primary">
+                        Total Cost: {price}
                     </h5>
                     <hr />
                     {cart.map((universities) => (
