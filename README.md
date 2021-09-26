@@ -1,6 +1,6 @@
 # Project Name : Admission Center
 
-Live-site: [(https://admission-center.netlify.app/)]
+Live-site: https://admission-center.netlify.app/
 
 ## Description
 
