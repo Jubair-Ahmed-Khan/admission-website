@@ -18,11 +18,11 @@ const University = (props) => {
             <div className="col">
                 <div className="card h-100" style={{ backgroundColor: "lightgray" }}>
                     {/* card image  */}
-                    <img src={url} className="card-img-top" alt="..." style={{ height: "200px" }} />
+                    <img src={url} className="card-img-top  p-3" alt="..." style={{ height: "200px" }} />
 
                     {/* card info */}
                     <div className="card-body">
-                        <h5><span className="fw-bolder text-primary">Name: </span>{name}</h5>
+                        <p><span className="fw-bolder text-primary">Name: </span>{name}</p>
                         <p><span className="fw-bolder text-primary">Established: </span>{established}</p>
                         <p><span className="fw-bolder text-primary">Address: </span>{address}</p>
                         <p><span className="fw-bolder text-primary">Area: </span>{area}</p>
