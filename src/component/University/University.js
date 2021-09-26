@@ -7,10 +7,11 @@ const University = (props) => {
     // destructuring 
     const { img, name, established, address, area, formFillupFee } = props.university;
 
-    const url = "./images/" + img; // image link
+    // image link
+    const url = "./images/" + img;
 
-    const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />; // cart icon font-awesome
-
+    // cart icon font-awesome
+    const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
 
     return (
         <div>
@@ -27,6 +28,13 @@ const University = (props) => {
                         <p><span className="fw-bolder text-primary">Address: </span>{address}</p>
                         <p><span className="fw-bolder text-primary">Area: </span>{area}</p>
                         <p><span className="fw-bolder text-primary">Form Fillup Cost: </span>{formFillupFee} TK</p>
+                        <br />
+                        <p>
+                            <i class="fab fa-facebook-square fa-3x text-primary me-4"></i>
+                            <i class="fas fa-envelope-square fa-3x text-primary me-4"></i>
+                            <i class="fab fa-twitter-square fa-3x text-primary me-4"></i>
+                            <i class="fab fa-youtube-square fa-3x text-primary me-4"></i>
+                        </p>
                     </div>
 
                     {/* card footer  */}
