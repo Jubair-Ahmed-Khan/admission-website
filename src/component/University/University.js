@@ -13,7 +13,7 @@ const University = (props) => {
     return (
         <div>
             <div className="col">
-                <div className="card h-100">
+                <div className="card h-100" style={{ backgroundColor: "lightgray" }}>
                     <img src={url} className="card-img-top" alt="..." style={{ height: "200px" }} />
                     <div className="card-body">
                         <h5><span className="fw-bolder text-primary">Name: </span>{name}</h5>
