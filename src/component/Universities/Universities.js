@@ -26,18 +26,18 @@ const Universities = () => {
     return (
         <div className="container-fluid my-5">
             <div className="row mt-3">
-                <div className="col-md-9 border-end">
+                <div className="col-md-9">
                     <div className="row row-cols-1 row-cols-lg-3 g-4">
                         {universities.map((university) => (
                             <University key={university.key} university={university} handleBtn={handleBtn}></University>
                         ))}
                     </div>
                 </div>
-                <div className="col-md-3">
-                    <h5 className="text-center text-primary">
+                <div className="col-md-3 bg-info my-5 my-lg-0 pt-3">
+                    <h5 className="text-center text-white">
                         Selected Items: {cart.length}
                     </h5>
-                    <h5 className="text-center text-primary">
+                    <h5 className="text-center text-white">
                         Total Cost: {price}
                     </h5>
                     <hr />
